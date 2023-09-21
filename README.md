@@ -1,2 +1,2 @@
-# cloudguard-modules
-Modules for all the cloud platforms and it's resources written in python
+# cloudguard-providers
+Cloudguard provider modules written in python to be used in cloudguard CLI
