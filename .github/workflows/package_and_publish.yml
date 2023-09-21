@@ -1,0 +1,36 @@
+name: Build and Publish cloudguard-providers module
+
+on:
+  push:
+    branches: [main]
+  
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11.5"]
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      
+      - name: Install dependencies
+        run: |
+          pip install poetry==1.6.1
+          poetry install
+      
+      - name: Setup config for PyPi
+        run: |
+          poetry config pypi-token.pypi ${{ secrets.LIMEBREW_PYPI_TOKEN }}
+      
+      - name: Build the module
+        run: |
+          poetry build
+      
+      - name: Publish to PyPi
+        run: |
+          poetry publish
