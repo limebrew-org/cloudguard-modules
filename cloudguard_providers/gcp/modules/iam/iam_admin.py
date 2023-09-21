@@ -1,4 +1,4 @@
-from modules.utils.shell import execute_command
+from cloudguard_providers.gcp.utils.shell import execute_command
 
 class IAM:
     def __init__(self,project_id:str,credentials:str,service_account_id:str):
