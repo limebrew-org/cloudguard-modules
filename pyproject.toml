@@ -4,6 +4,7 @@ version = "1.0.0"
 description = "Cloudguard provider modules written in python to be used in cloudguard CLI"
 authors = ["deepraj1729 <deeprajbaidyaofficial@gmail.com>", "Saptaktdk <saptakdev123@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 packages = [{include = "cloudguard_providers"}]
 
 [tool.poetry.dependencies]
