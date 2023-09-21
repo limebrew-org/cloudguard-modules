@@ -5,6 +5,9 @@ description = "Cloudguard provider modules written in python to be used in cloud
 authors = ["deepraj1729 <deeprajbaidyaofficial@gmail.com>", "Saptaktdk <saptakdev123@gmail.com>"]
 readme = "README.md"
 license = "MIT"
+homepage = "https://github.com/limebrew-org/cloudguard-providers"
+repository = "https://github.com/limebrew-org/cloudguard-providers"
+keywords = ["python","aws","azure","gcp","cspm"]
 packages = [{include = "cloudguard_providers"}]
 
 [tool.poetry.dependencies]
