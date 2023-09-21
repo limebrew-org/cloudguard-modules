@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "cloudguard-providers"
-version = "1.0.0"
+name = "cloudguard-modules"
+version = "1.0.1"
 description = "Cloudguard provider modules written in python to be used in cloudguard CLI"
 authors = ["deepraj1729 <deeprajbaidyaofficial@gmail.com>", "Saptaktdk <saptakdev123@gmail.com>"]
 readme = "README.md"
 license = "MIT"
-homepage = "https://github.com/limebrew-org/cloudguard-providers"
-repository = "https://github.com/limebrew-org/cloudguard-providers"
+homepage = "https://github.com/limebrew-org/cloudguard-modules"
+repository = "https://github.com/limebrew-org/cloudguard-modules"
 keywords = ["python","aws","azure","gcp","cspm"]
-packages = [{include = "cloudguard_providers"}]
+packages = [{include = "cloudguard_modules"}]
 
 [tool.poetry.dependencies]
 python = "^3.11.5"
