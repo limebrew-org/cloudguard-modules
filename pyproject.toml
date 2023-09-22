@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cloudguard-modules"
-version = "1.0.1"
+version = "1.0.2"
 description = "Cloudguard provider modules written in python to be used in cloudguard CLI"
 authors = ["deepraj1729 <deeprajbaidyaofficial@gmail.com>", "Saptaktdk <saptakdev123@gmail.com>"]
 readme = "README.md"
