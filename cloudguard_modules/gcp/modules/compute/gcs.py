@@ -1,17 +1,9 @@
-from google.oauth2 import service_account
 from google.cloud import storage
 
 class CloudStorage:
-    def __init__(self,project_id:str,credentials:str,service_account_id:str):
+    def __init__(self,project_id:str):
         self.project_id = project_id
-        self.credentials_json = credentials
-        self.service_account_id = service_account_id
-        self.credentials = service_account.Credentials.from_service_account_file(
-            self.credentials_json,
-            scopes=['https://www.googleapis.com/auth/cloud-platform']
-        )
-        self.client = storage.Client(project=self.project_id,credentials=self.credentials)
-
+        self.client = storage.Client(project=self.project_id)
 
     def get_all_buckets(self):
         return self.client.list_buckets()
